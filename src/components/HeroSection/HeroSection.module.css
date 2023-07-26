@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.mainContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 40px;
+  & h1 {
+    font-size: 4.125rem;
+  }
+  & p {
+    line-height: 25px;
+    color: var(--light-font-color);
+  }
+}
+
+.mainImage > img {
+  max-width: 467px;
+  max-height: 544px;
+}
+
+.contact {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--card-hover-color);
+  border-radius: 50px;
+  & input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: var(--primary-font-color);
+    padding-left: 5px;
+  }
+
+  & button {
+    background-color: var(--primary-button-color);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  & .email {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+}

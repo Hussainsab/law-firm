@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 63px 0;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 40px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.contact {
+  padding: 10px 35px;
+  border: 2px solid var(--primary-font-color);
+  background-color: var(--secondary-background-color);
+  color: var(--primary-font-color);
+  line-height: 26px;
+  font-weight: 600;
+}
