@@ -1,0 +1,15 @@
+.btn {
+  padding: 1px 5px;
+  border-radius: 50px;
+  background-color: var(--primary-button-color);
+  border: none;
+}
+
+.MuiPapeElevation {
+  border-bottom: 1px solid var(--newletter-background-color) !important;
+  box-shadow: none !important;
+}
+
+.removeShadow {
+  box-shadow: none !important;
+}

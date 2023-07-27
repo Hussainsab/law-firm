@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamSection {
+  width: 80%;
+
+  & h1 {
+    text-align: center;
+    font-size: 3.12rem;
+    padding-bottom: 100px;
+  }
+}
+
+.profileSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}

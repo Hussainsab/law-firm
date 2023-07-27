@@ -4,11 +4,11 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
 import Card from "../Card/Card";
 import imagedata from "../../assets/user.png";
-console.log("from section = ", imagedata);
-
+import imagedata1 from "../../assets/userImage.png";
+import imagedata2 from "../../assets/userImage2.png";
 let commentData = [
   {
-    image: imagedata,
+    image: imagedata1,
     title: "Jane Cooper",
     from: "Ceo of Hunt",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
@@ -20,7 +20,7 @@ let commentData = [
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
   },
   {
-    image: imagedata,
+    image: imagedata2,
     title: "Robert Fox",
     from: "Ceo of Hunt",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
@@ -28,7 +28,7 @@ let commentData = [
 ];
 const CommentSection = () => {
   return (
-    <div className={styles.conatiner}>
+    <div className={styles.container}>
       <div className={styles.CommentSection}>
         <div className={styles.heading}>
           <h1>What says our happy Clients</h1>
@@ -43,10 +43,9 @@ const CommentSection = () => {
         </div>
         <div className={styles.userCommentCard}>
           {commentData.map((item, index) => {
-            console.log("user image", item.imagedata);
             return (
               <Card
-                image={item.imagedata}
+                image={item.image}
                 heading={item.title}
                 text={item.text}
                 from={item.from}

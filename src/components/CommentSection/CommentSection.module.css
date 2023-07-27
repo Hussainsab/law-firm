@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.CommentSection {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.userCommentCard {
+  display: flex;
+  gap: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  & h1 {
+    width: 374px;
+    height: 154px;
+    font-size: 3.12rem;
+  }
+  & button {
+    padding: 10px 12px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 5px;
+  }
+  & button:last-child {
+    background-color: var(--primary-button-color);
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+}
+
+.faqSection {
+  width: 80%;
+  & h1 {
+    padding-bottom: 10px;
+  }
+}
+
+.faqChildSection {
+  display: flex;
+}
+
+.leftSection {
+  width: 50%;
+  & p {
+    padding-top: 20px;
+  }
+}
+
+.rightSection {
+  width: 50%;
+}
